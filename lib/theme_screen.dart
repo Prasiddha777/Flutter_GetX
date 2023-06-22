@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 import 'package:get/get_core/get_core.dart';
 
 class ThemeScreen extends StatefulWidget {
-  const ThemeScreen({super.key});
+   ThemeScreen({super.key, this.name});
+  var name;
 
   @override
   State<ThemeScreen> createState() => _ThemeScreenState();
@@ -14,7 +15,7 @@ class _ThemeScreenState extends State<ThemeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Getx Theme Screen"),
+        // title: const Text(Get.),
       ),
       body: Column(
         children: [
@@ -40,8 +41,8 @@ class _ThemeScreenState extends State<ThemeScreen> {
                     content: const Column(
                       children: [
                         Text('Hello World'),
-                        Text('Hello World'),
-                        Text('Hello World'),
+                        // Text('Hello World'),
+                        // Text('Hello World'),
                       ],
                     ));
               },

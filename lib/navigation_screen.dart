@@ -18,7 +18,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
       ),
       body: ElevatedButton(
         onPressed: () {
-          Get.to(HomeScreen());
+          // Get.to(HomeScreen());
+          //goes to themescren
+          Get.toNamed('/themeScreen');
         },
         child: const Text('Next Page'),
       ),

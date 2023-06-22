@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get_app/heightwidth_screen.dart';
 import 'package:get_app/home_screen.dart';
 import 'package:get/get.dart';
 import 'package:get_app/navigation_screen.dart';
@@ -21,7 +22,27 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const NavigationScreen(),
+      home: const HeightWidthScreen(),
+      getPages: [
+        GetPage(
+          name: '/',
+          page: () => const HomeScreen(),
+        ),
+        GetPage(
+          name: '/navigationScreen',
+          page: () => const NavigationScreen(),
+        ),
+        GetPage(
+          name: '/themeScreen',
+          page: () => ThemeScreen(
+            name: 'Hy',
+          ),
+        ),
+        GetPage(
+          name: '/heightWidthScreen',
+          page: () => const HeightWidthScreen(),
+        ),
+      ],
     );
   }
 }
