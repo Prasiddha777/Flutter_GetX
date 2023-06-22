@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:get_app/localization/language.dart';
 import 'package:get_app/localizaton_screen.dart';
 import 'package:get_app/navigation_screen.dart';
+import 'package:get_app/slider/slider.dart';
 import 'package:get_app/theme_screen.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CounterScreen(),
+      home: const SliderScreen(),
       getPages: [
         GetPage(
           name: '/',
