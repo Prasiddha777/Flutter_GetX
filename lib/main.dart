@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get_app/heightwidth_screen.dart';
 import 'package:get_app/home_screen.dart';
 import 'package:get/get.dart';
+import 'package:get_app/localization/language.dart';
+import 'package:get_app/localizaton_screen.dart';
 import 'package:get_app/navigation_screen.dart';
 import 'package:get_app/theme_screen.dart';
 
@@ -18,11 +20,14 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      fallbackLocale: Locale('en', 'US'),
+      translations: Languages(),
+      locale: Locale('np', 'NP'),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HeightWidthScreen(),
+      home: const LocalizationScreen(),
       getPages: [
         GetPage(
           name: '/',
