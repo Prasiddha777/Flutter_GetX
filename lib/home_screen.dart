@@ -16,7 +16,13 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Hello Get'),
       ),
       body: Column(
-        children: [],
+        children: [
+          ElevatedButton(
+              onPressed: () {
+                Get.back();
+              },
+              child: const Text('Get Back'))
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {

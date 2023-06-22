@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get_app/home_screen.dart';
 import 'package:get/get.dart';
+import 'package:get_app/navigation_screen.dart';
 import 'package:get_app/theme_screen.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ThemeScreen(),
+      home: const NavigationScreen(),
     );
   }
 }
